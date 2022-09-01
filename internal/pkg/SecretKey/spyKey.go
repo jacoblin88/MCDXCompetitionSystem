@@ -1,0 +1,7 @@
+package SecretKey
+
+var RsaSpyKey = struct {
+	PrivateKeyJsonStr string
+}{
+	PrivateKeyJsonStr: "{\"D\":\"ApKNQJK1q0JfP5utB4n6m/TFF2/lKsC3/2VWDWL3fsbYkKV8UmuzooyXsZ0acK3w0z9O2YtjsMcLNONlV2SslymyP4ZA4La7qEzgEY0vlQsf3QktvlNFwztEx3p+SV5rk9CA+OlaplWDVJcBIiXRUWl3wOKDZ6HfJWSrmEm6X4iUJDVvZIPUaed+DSM7ZY/cEzuXLpBZzkCnBp7mYWINy3S228WAmPJ8O1/aIbOYgxOOo58I/gEw9B7hmAeEp+kWk/foK3d82pj6wlv+GRPNMUmMP4kcKFAmoS/u3s0/pBm9y7J+qhI74c7bdd6h8aU98hW0WOvw+5in/RPZteuWU7k=\",\"E\":\"AQABAA==\",\"N\":\"AtYcQWx0i8vgR+xwvbENN4ByBmW5IqypJzDwb4qaTTddU+RFHxR0LrTgM8zjq3LjcCQrvhYyCf3DRzm7dvRkXzoXxT6hObHLd9v67F0wTfLm8phAyCh5TBoGBPMOL8Jky+tYdB1JCPvMPTD2rnccfu/yi47YZRxVXvkfhNpK546e4+irYwPjsu+GJZ9dBoOVrof3qqY033DOjZnN7tcLByJ4G6NjKIq8ctGreloYxNalOiBM8+yNlvBlF+B4TDFnBHbEvcEyvbwn7+hQviBrkpuNXUgKStxnchBp6ILEjwXuPn2cIhcdupbwZxCUQpgfQe2V8lhS3SPOIVNQBTB3GQU=\",\"Primes1\":\"At1O8LaAj1KlpT3JysawpwwzNQRCkz7DLvYH+H/j0F730HEHL7HpBktc/eEFWNM6PPpIxwKoHTPd/BfbSrhec/CQJoNVSEollbNDNFKy1UW7mvwAS+FwXCZhvdIOKXY8AcUd6lWxCPcYclFSoELhdS344lmqrj2I4MHzIs0ABD6f\",\"Primes2\":\"AvesdiVPRBcUv2Ezg+LfzxpcR5jSIzpT/rgCEj6WXwYoBD2vrqlNgVfiT3jQkL5xSZuoA/e3D/HBt1yryu5nxW2NrlYuja4BQng7aqqgd+BWOByyy6e0ksrlsqKSD/R5PX4QLxiI+S0f40OaI0AaeAsxK1uXC1a92CrQ6ugaSBnb\"}",
+}

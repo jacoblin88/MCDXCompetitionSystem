@@ -1,0 +1,2052 @@
+- service:
+  serviceid: 1
+  teamid: 1
+  machineid: 1
+  ip: "10.0.0.1"
+  port: 587
+  checkpatch: "/root/scripts/proxylogon/patch.sh"
+  checknormal: "/root/scripts/proxylogon/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -500
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 1125
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -1000
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 2
+  teamid: 1
+  machineid: 1
+  ip: "10.0.0.1"
+  port: 445
+  checkpatch: "/root/scripts/zerologon/patch.sh"
+  checknormal: "/root/scripts/zerologon/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -500
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 1125
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -1000
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 3
+  teamid: 1
+  machineid: 2
+  ip: "10.0.0.2"
+  port: 445
+  checkpatch: "/root/scripts/MS17_010/patch.sh"
+  checknormal: "/root/scripts/MS17_010/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -150
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -300
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 4
+  teamid: 1
+  machineid: 2
+  ip: "10.0.0.2"
+  port: 3389
+  checkpatch: "/root/scripts/bluekeep/patch.sh"
+  checknormal: "/root/scripts/bluekeep/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -150
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -300
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 5
+  teamid: 1
+  machineid: 2
+  ip: "10.0.0.2"
+  port: 81
+  checkpatch: "/root/scripts/cookie/patch.sh"
+  checknormal: "/root/scripts/cookie/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -150
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -300
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 6
+  teamid: 1
+  machineid: 3
+  ip: "10.0.0.3"
+  port: 80
+  checkpatch: "/root/scripts/XXE/patch.sh"
+  checknormal: "/root/scripts/XXE/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -200
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 550
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -400
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 7
+  teamid: 1
+  machineid: 3
+  ip: "10.0.0.3"
+  port: 445
+  checkpatch: "/root/scripts/MS17_010/patch.sh"
+  checknormal: "/root/scripts/MS17_010/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -200
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 400
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -400
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 8
+  teamid: 1
+  machineid: 3
+  ip: "10.0.0.3"
+  port: 3389
+  checkpatch: "/root/scripts/bluekeep/patch.sh"
+  checknormal: "/root/scripts/bluekeep/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -200
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 400
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -400
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 9
+  teamid: 1
+  machineid: 4
+  ip: "10.0.0.4"
+  port: 80
+  checkpatch: "/root/scripts/apache/patch.sh"
+  checknormal: "/root/scripts/apache/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -160
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -320
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 10
+  teamid: 1
+  machineid: 4
+  ip: "10.0.0.4"
+  port: 80
+  checkpatch: "/root/scripts/wordpress_RCE/patch.sh"
+  checknormal: "/root/scripts/wordpress_RCE/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -160
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 375
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -320
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 11
+  teamid: 1
+  machineid: 4
+  ip: "10.0.0.4"
+  port: 80
+  checkpatch: "/root/scripts/weak_password/patch.sh"
+  checknormal: "/root/scripts/weak_password/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -160
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 375
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -320
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 12
+  teamid: 1
+  machineid: 4
+  ip: "10.0.0.4"
+  port: 1234
+  checkpatch: "/root/scripts/linux_pwn/patch.sh"
+  checknormal: "/root/scripts/linux_pwn/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -160
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 450
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -320
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 13
+  teamid: 1
+  machineid: 5
+  ip: "10.0.0.5"
+  port: 5555
+  checkpatch: "/root/scripts/XSS/patch.sh"
+  checknormal: "/root/scripts/XSS/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 14
+  teamid: 1
+  machineid: 5
+  ip: "10.0.0.5"
+  port: 80
+  checkpatch: "/root/scripts/SSRF/patch.sh"
+  checknormal: "/root/scripts/SSRF/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 15
+  teamid: 1
+  machineid: 5
+  ip: "10.0.0.5"
+  port: 81
+  checkpatch: "/root/scripts/commandinjection/patch.sh"
+  checknormal: "/root/scripts/commandinjection/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 225
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 16
+  teamid: 1
+  machineid: 6
+  ip: "10.0.0.6"
+  port: 80
+  checkpatch: "/root/scripts/file_upload/patch.sh"
+  checknormal: "/root/scripts/file_upload/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 225
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 17
+  teamid: 1
+  machineid: 6
+  ip: "10.0.0.6"
+  port: 81
+  checkpatch: "/root/scripts/sql_injection/patch.sh"
+  checknormal: "/root/scripts/sql_injection/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 18
+  teamid: 1
+  machineid: 6
+  ip: "10.0.0.6"
+  port: 9999
+  checkpatch: "/root/scripts/JWT/patch.sh"
+  checknormal: "/root/scripts/JWT/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 400
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 19
+  teamid: 1
+  machineid: 6
+  ip: "10.0.0.6"
+  port: 82
+  checkpatch: "/root/scripts/dirb/patch.sh"
+  checknormal: "/root/scripts/dirb/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 200
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 20
+  teamid: 2
+  machineid: 7
+  ip: "10.32.0.1"
+  port: 587
+  checkpatch: "/root/scripts/proxylogon/patch.sh"
+  checknormal: "/root/scripts/proxylogon/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -500
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 1125
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -1000
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 21
+  teamid: 2
+  machineid: 7
+  ip: "10.32.0.1"
+  port: 445
+  checkpatch: "/root/scripts/zerologon/patch.sh"
+  checknormal: "/root/scripts/zerologon/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -500
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 1125
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -1000
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 22
+  teamid: 2
+  machineid: 8
+  ip: "10.32.0.2"
+  port: 445
+  checkpatch: "/root/scripts/MS17_010/patch.sh"
+  checknormal: "/root/scripts/MS17_010/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -150
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -300
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 23
+  teamid: 2
+  machineid: 8
+  ip: "10.32.0.2"
+  port: 3389
+  checkpatch: "/root/scripts/bluekeep/patch.sh"
+  checknormal: "/root/scripts/bluekeep/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -150
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -300
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 24
+  teamid: 2
+  machineid: 8
+  ip: "10.32.0.2"
+  port: 81
+  checkpatch: "/root/scripts/cookie/patch.sh"
+  checknormal: "/root/scripts/cookie/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -150
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -300
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 25
+  teamid: 2
+  machineid: 9
+  ip: "10.32.0.3"
+  port: 80
+  checkpatch: "/root/scripts/XXE/patch.sh"
+  checknormal: "/root/scripts/XXE/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -200
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 550
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -400
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 26
+  teamid: 2
+  machineid: 9
+  ip: "10.32.0.3"
+  port: 445
+  checkpatch: "/root/scripts/MS17_010/patch.sh"
+  checknormal: "/root/scripts/MS17_010/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -200
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 400
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -400
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 27
+  teamid: 2
+  machineid: 9
+  ip: "10.32.0.3"
+  port: 3389
+  checkpatch: "/root/scripts/bluekeep/patch.sh"
+  checknormal: "/root/scripts/bluekeep/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -200
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 400
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -400
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 28
+  teamid: 2
+  machineid: 10
+  ip: "10.32.0.4"
+  port: 80
+  checkpatch: "/root/scripts/apache/patch.sh"
+  checknormal: "/root/scripts/apache/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -160
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -320
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 29
+  teamid: 2
+  machineid: 10
+  ip: "10.32.0.4"
+  port: 80
+  checkpatch: "/root/scripts/wordpress_RCE/patch.sh"
+  checknormal: "/root/scripts/wordpress_RCE/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -160
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 375
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -320
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 30
+  teamid: 2
+  machineid: 10
+  ip: "10.32.0.4"
+  port: 80
+  checkpatch: "/root/scripts/weak_password/patch.sh"
+  checknormal: "/root/scripts/weak_password/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -160
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 375
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -320
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 31
+  teamid: 2
+  machineid: 10
+  ip: "10.32.0.4"
+  port: 1234
+  checkpatch: "/root/scripts/linux_pwn/patch.sh"
+  checknormal: "/root/scripts/linux_pwn/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -160
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 450
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -320
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 32
+  teamid: 2
+  machineid: 11
+  ip: "10.32.0.5"
+  port: 5555
+  checkpatch: "/root/scripts/XSS/patch.sh"
+  checknormal: "/root/scripts/XSS/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 33
+  teamid: 2
+  machineid: 11
+  ip: "10.32.0.5"
+  port: 80
+  checkpatch: "/root/scripts/SSRF/patch.sh"
+  checknormal: "/root/scripts/SSRF/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 34
+  teamid: 2
+  machineid: 11
+  ip: "10.32.0.5"
+  port: 81
+  checkpatch: "/root/scripts/commandinjection/patch.sh"
+  checknormal: "/root/scripts/commandinjection/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 225
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 35
+  teamid: 2
+  machineid: 12
+  ip: "10.32.0.6"
+  port: 80
+  checkpatch: "/root/scripts/file_upload/patch.sh"
+  checknormal: "/root/scripts/file_upload/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 225
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 36
+  teamid: 2
+  machineid: 12
+  ip: "10.32.0.6"
+  port: 81
+  checkpatch: "/root/scripts/sql_injection/patch.sh"
+  checknormal: "/root/scripts/sql_injection/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 37
+  teamid: 2
+  machineid: 12
+  ip: "10.32.0.6"
+  port: 9999
+  checkpatch: "/root/scripts/JWT/patch.sh"
+  checknormal: "/root/scripts/JWT/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 400
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 38
+  teamid: 2
+  machineid: 12
+  ip: "10.32.0.6"
+  port: 82
+  checkpatch: "/root/scripts/dirb/patch.sh"
+  checknormal: "/root/scripts/dirb/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 200
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 39
+  teamid: 3
+  machineid: 13
+  ip: "10.64.0.1"
+  port: 587
+  checkpatch: "/root/scripts/proxylogon/patch.sh"
+  checknormal: "/root/scripts/proxylogon/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -500
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 1125
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -1000
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 40
+  teamid: 3
+  machineid: 13
+  ip: "10.64.0.1"
+  port: 445
+  checkpatch: "/root/scripts/zerologon/patch.sh"
+  checknormal: "/root/scripts/zerologon/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -500
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 1125
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -1000
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 41
+  teamid: 3
+  machineid: 14
+  ip: "10.64.0.2"
+  port: 445
+  checkpatch: "/root/scripts/MS17_010/patch.sh"
+  checknormal: "/root/scripts/MS17_010/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -150
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -300
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 42
+  teamid: 3
+  machineid: 14
+  ip: "10.64.0.2"
+  port: 3389
+  checkpatch: "/root/scripts/bluekeep/patch.sh"
+  checknormal: "/root/scripts/bluekeep/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -150
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -300
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 43
+  teamid: 3
+  machineid: 14
+  ip: "10.64.0.2"
+  port: 81
+  checkpatch: "/root/scripts/cookie/patch.sh"
+  checknormal: "/root/scripts/cookie/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -150
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -300
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 44
+  teamid: 3
+  machineid: 15
+  ip: "10.64.0.3"
+  port: 80
+  checkpatch: "/root/scripts/XXE/patch.sh"
+  checknormal: "/root/scripts/XXE/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -200
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 550
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -400
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 45
+  teamid: 3
+  machineid: 15
+  ip: "10.64.0.3"
+  port: 445
+  checkpatch: "/root/scripts/MS17_010/patch.sh"
+  checknormal: "/root/scripts/MS17_010/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -200
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 400
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -400
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 46
+  teamid: 3
+  machineid: 15
+  ip: "10.64.0.3"
+  port: 3389
+  checkpatch: "/root/scripts/bluekeep/patch.sh"
+  checknormal: "/root/scripts/bluekeep/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -200
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 400
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -400
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 47
+  teamid: 3
+  machineid: 16
+  ip: "10.64.0.4"
+  port: 80
+  checkpatch: "/root/scripts/apache/patch.sh"
+  checknormal: "/root/scripts/apache/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -160
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -320
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 48
+  teamid: 3
+  machineid: 16
+  ip: "10.64.0.4"
+  port: 80
+  checkpatch: "/root/scripts/wordpress_RCE/patch.sh"
+  checknormal: "/root/scripts/wordpress_RCE/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -160
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 375
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -320
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 49
+  teamid: 3
+  machineid: 16
+  ip: "10.64.0.4"
+  port: 80
+  checkpatch: "/root/scripts/weak_password/patch.sh"
+  checknormal: "/root/scripts/weak_password/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -160
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 375
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -320
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 50
+  teamid: 3
+  machineid: 16
+  ip: "10.64.0.4"
+  port: 1234
+  checkpatch: "/root/scripts/linux_pwn/patch.sh"
+  checknormal: "/root/scripts/linux_pwn/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -160
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 450
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -320
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 51
+  teamid: 3
+  machineid: 17
+  ip: "10.64.0.5"
+  port: 5555
+  checkpatch: "/root/scripts/XSS/patch.sh"
+  checknormal: "/root/scripts/XSS/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 52
+  teamid: 3
+  machineid: 17
+  ip: "10.64.0.5"
+  port: 80
+  checkpatch: "/root/scripts/SSRF/patch.sh"
+  checknormal: "/root/scripts/SSRF/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 53
+  teamid: 3
+  machineid: 17
+  ip: "10.64.0.5"
+  port: 81
+  checkpatch: "/root/scripts/commandinjection/patch.sh"
+  checknormal: "/root/scripts/commandinjection/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 225
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 54
+  teamid: 3
+  machineid: 18
+  ip: "10.64.0.6"
+  port: 80
+  checkpatch: "/root/scripts/file_upload/patch.sh"
+  checknormal: "/root/scripts/file_upload/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 225
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 55
+  teamid: 3
+  machineid: 18
+  ip: "10.64.0.6"
+  port: 81
+  checkpatch: "/root/scripts/sql_injection/patch.sh"
+  checknormal: "/root/scripts/sql_injection/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 56
+  teamid: 3
+  machineid: 18
+  ip: "10.64.0.6"
+  port: 9999
+  checkpatch: "/root/scripts/JWT/patch.sh"
+  checknormal: "/root/scripts/JWT/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 400
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 57
+  teamid: 3
+  machineid: 18
+  ip: "10.64.0.6"
+  port: 82
+  checkpatch: "/root/scripts/dirb/patch.sh"
+  checknormal: "/root/scripts/dirb/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 200
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 58
+  teamid: 4
+  machineid: 19
+  ip: "10.96.0.1"
+  port: 587
+  checkpatch: "/root/scripts/proxylogon/patch.sh"
+  checknormal: "/root/scripts/proxylogon/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -500
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 1125
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -1000
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 59
+  teamid: 4
+  machineid: 19
+  ip: "10.96.0.1"
+  port: 445
+  checkpatch: "/root/scripts/zerologon/patch.sh"
+  checknormal: "/root/scripts/zerologon/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -500
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 1125
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -1000
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 60
+  teamid: 4
+  machineid: 20
+  ip: "10.96.0.2"
+  port: 445
+  checkpatch: "/root/scripts/MS17_010/patch.sh"
+  checknormal: "/root/scripts/MS17_010/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -150
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -300
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 61
+  teamid: 4
+  machineid: 20
+  ip: "10.96.0.2"
+  port: 3389
+  checkpatch: "/root/scripts/bluekeep/patch.sh"
+  checknormal: "/root/scripts/bluekeep/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -150
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -300
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 62
+  teamid: 4
+  machineid: 20
+  ip: "10.96.0.2"
+  port: 81
+  checkpatch: "/root/scripts/cookie/patch.sh"
+  checknormal: "/root/scripts/cookie/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -150
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -300
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 63
+  teamid: 4
+  machineid: 21
+  ip: "10.96.0.3"
+  port: 80
+  checkpatch: "/root/scripts/XXE/patch.sh"
+  checknormal: "/root/scripts/XXE/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -200
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 550
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -400
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 64
+  teamid: 4
+  machineid: 21
+  ip: "10.96.0.3"
+  port: 445
+  checkpatch: "/root/scripts/MS17_010/patch.sh"
+  checknormal: "/root/scripts/MS17_010/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -200
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 400
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -400
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 65
+  teamid: 4
+  machineid: 21
+  ip: "10.96.0.3"
+  port: 3389
+  checkpatch: "/root/scripts/bluekeep/patch.sh"
+  checknormal: "/root/scripts/bluekeep/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -200
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 400
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -400
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 66
+  teamid: 4
+  machineid: 22
+  ip: "10.96.0.4"
+  port: 80
+  checkpatch: "/root/scripts/apache/patch.sh"
+  checknormal: "/root/scripts/apache/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -160
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -320
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 67
+  teamid: 4
+  machineid: 22
+  ip: "10.96.0.4"
+  port: 80
+  checkpatch: "/root/scripts/wordpress_RCE/patch.sh"
+  checknormal: "/root/scripts/wordpress_RCE/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -160
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 375
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -320
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 68
+  teamid: 4
+  machineid: 22
+  ip: "10.96.0.4"
+  port: 80
+  checkpatch: "/root/scripts/weak_password/patch.sh"
+  checknormal: "/root/scripts/weak_password/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -160
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 375
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -320
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 69
+  teamid: 4
+  machineid: 22
+  ip: "10.96.0.4"
+  port: 1234
+  checkpatch: "/root/scripts/linux_pwn/patch.sh"
+  checknormal: "/root/scripts/linux_pwn/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -160
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 450
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -320
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 70
+  teamid: 4
+  machineid: 23
+  ip: "10.96.0.5"
+  port: 5555
+  checkpatch: "/root/scripts/XSS/patch.sh"
+  checknormal: "/root/scripts/XSS/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 71
+  teamid: 4
+  machineid: 23
+  ip: "10.96.0.5"
+  port: 80
+  checkpatch: "/root/scripts/SSRF/patch.sh"
+  checknormal: "/root/scripts/SSRF/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 72
+  teamid: 4
+  machineid: 23
+  ip: "10.96.0.5"
+  port: 81
+  checkpatch: "/root/scripts/commandinjection/patch.sh"
+  checknormal: "/root/scripts/commandinjection/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 225
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 73
+  teamid: 4
+  machineid: 24
+  ip: "10.96.0.6"
+  port: 80
+  checkpatch: "/root/scripts/file_upload/patch.sh"
+  checknormal: "/root/scripts/file_upload/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 225
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 74
+  teamid: 4
+  machineid: 24
+  ip: "10.96.0.6"
+  port: 81
+  checkpatch: "/root/scripts/sql_injection/patch.sh"
+  checknormal: "/root/scripts/sql_injection/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 300
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 75
+  teamid: 4
+  machineid: 24
+  ip: "10.96.0.6"
+  port: 9999
+  checkpatch: "/root/scripts/JWT/patch.sh"
+  checknormal: "/root/scripts/JWT/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 400
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0
+- service:
+  serviceid: 76
+  teamid: 4
+  machineid: 24
+  ip: "10.96.0.6"
+  port: 82
+  checkpatch: "/root/scripts/dirb/patch.sh"
+  checknormal: "/root/scripts/dirb/normal.sh"
+  event:
+    serviceloss:
+      atk: 0
+      def: -125
+    servicenormal:
+      atk: 0
+      def: 0
+    servicepatch:
+      atk: 0
+      def: 200
+    servicenotpatch:
+      atk: 0
+      def: 0
+    serviceblock:
+      atk: 0
+      def: -250
+    servicenotblock:
+      atk: 0
+      def: 0

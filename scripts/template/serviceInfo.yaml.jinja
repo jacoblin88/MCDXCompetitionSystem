@@ -1,0 +1,28 @@
+{% for i in serviceInfo %}- service:
+  serviceid: {{ i.serviceid }}
+  teamid: {{ i.teamid }}
+  machineid: {{ i.machineid }}
+  ip: "{{ i.ip }}"
+  port: {{ i.port }}
+  checkpatch: "{{ i.checkpatch }}"
+  checknormal: "{{ i.checknormal }}"
+  event:
+    serviceloss:
+      atk: {{ i.event.serviceloss.atk }}
+      def: {{ i.event.serviceloss.def }}
+    servicenormal:
+      atk: {{ i.event.servicenormal.atk }}
+      def: {{ i.event.servicenormal.def }}
+    servicepatch:
+      atk: {{ i.event.servicepatch.atk }}
+      def: {{ i.event.servicepatch.def }}
+    servicenotpatch:
+      atk: {{ i.event.servicenotpatch.atk }}
+      def: {{ i.event.servicenotpatch.def }}
+    serviceblock:
+      atk: {{ i.event.serviceblock.atk }}
+      def: {{ i.event.serviceblock.def }}
+    servicenotblock:
+      atk: {{ i.event.servicenotblock.atk }}
+      def: {{ i.event.servicenotblock.def }}
+{% endfor %}

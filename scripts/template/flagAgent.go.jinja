@@ -1,0 +1,18 @@
+package main
+
+import (
+	"log"
+
+	"github.com/PangolinoLab/MCDXCompetitionSystem/internal/pkg/FlagAgent"
+)
+
+func main() {
+	privateKey := "{{ privateKey }}"
+	publlicKey := "{{ publlicKey }}"
+	f, err := FlagAgent.New("{{ ip }}", {{ port }}, {{ tryTimes }}, privateKey, publlicKey)
+	if err != nil {
+		log.Panic(err)
+		return
+	}
+	f.StartService()
+}

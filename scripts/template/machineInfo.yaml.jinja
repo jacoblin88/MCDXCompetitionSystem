@@ -1,0 +1,27 @@
+{% for i in machineInfo %}- machine:
+  machineid: {{ i.machineid }}
+  flag:
+    path: "{{ i.flag.path }}"
+    port: {{ i.flag.port }}
+  teamid: {{ i.teamid }}
+  ip: "{{ i.ip }}"
+  event:
+    flagupdatefail:
+      atk: {{ i.event.flagupdatefail.atk }}
+      def: {{ i.event.flagupdatefail.atk }}
+    flagupdatesuc:
+      atk: {{ i.event.flagupdatesuc.atk }}
+      def: {{ i.event.flagupdatesuc.atk }}
+    flagloss:
+      atk: {{ i.event.flagloss.atk }}
+      def: {{ i.event.flagloss.atk }}
+    flagexist:
+      atk: {{ i.event.flagexist.atk }}
+      def: {{ i.event.flagexist.atk }}
+    flagsubmit:
+      atk: {{ i.event.flagsubmit.atk }}
+      def: {{ i.event.flagsubmit.atk }}
+    resetsys:
+      atk: {{ i.event.resetsys.atk }}
+      def: {{ i.event.resetsys.atk }}
+{% endfor %}

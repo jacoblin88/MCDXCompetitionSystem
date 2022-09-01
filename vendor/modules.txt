@@ -1,0 +1,30 @@
+# github.com/ThreeDotsLabs/watermill v1.1.1
+## explicit
+github.com/ThreeDotsLabs/watermill
+github.com/ThreeDotsLabs/watermill/internal
+github.com/ThreeDotsLabs/watermill/message
+github.com/ThreeDotsLabs/watermill/pubsub/gochannel
+github.com/ThreeDotsLabs/watermill/pubsub/sync
+# github.com/bradfitz/slice v0.0.0-20180809154707-2b758aa73013
+## explicit
+github.com/bradfitz/slice
+# github.com/go-sql-driver/mysql v1.6.0
+## explicit
+github.com/go-sql-driver/mysql
+# github.com/google/uuid v1.1.1
+github.com/google/uuid
+# github.com/gorilla/mux v1.8.0
+## explicit
+github.com/gorilla/mux
+# github.com/lithammer/shortuuid/v3 v3.0.4
+github.com/lithammer/shortuuid/v3
+# github.com/oklog/ulid v1.3.1
+github.com/oklog/ulid
+# github.com/pkg/errors v0.8.1
+github.com/pkg/errors
+# go4.org v0.0.0-20201209231011-d4a079459e60
+## explicit
+go4.org/reflectutil
+# gopkg.in/yaml.v2 v2.4.0
+## explicit
+gopkg.in/yaml.v2

@@ -1,0 +1,5 @@
+uname: "mcdx_system"
+pass: "&UJM8ik,+-*/"
+host: "mysqlServiceHost"
+port: "3306"
+dbname: "McdxComDB"

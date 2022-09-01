@@ -1,0 +1,36 @@
+//interface
+
+type SqlDatabase interface {
+	CheckStatus() error
+	//Check if We can connect the database
+
+	Open() error
+	Close() error
+}
+
+type DataBaseOperator interface {
+	InsertToFlagTable(TeamID []int, MachineID []int, flag []string, Round []int) error
+	//Insert New flag collection to FlagTable
+	//This will be used when the competition start only
+
+	UpdateFlagTable(TeamID []int, MachineID []int, flag []string, Round []int) error
+	//Update FlagTable with a new flag collection of all team when starting a new Round
+
+	InsertToFlagRecord(TeamID []int, MachineID []int, flag []string, Round []int) error
+	//Record the new flag collection in FlagRecord when starting a new Round
+
+	InsertScoreRecord(TeamID []int, AtkScore []int, DefScore []int, Round []int) error
+	//Record AtkScore and DefScore of every Team in ScoreRecord when every Round ends.
+
+	AddToScoreTotal(TeamID []int, AtkScore []int, DefScore []int) error
+	//When a Round end,the system will add AtkScore and DefScore of Each Team to ScoreTotal.
+
+	InsertToLogTable(TeamID []int, MachineID []int, Event []string, Round []int, Turn []int) error
+	//When a Round end,the system will record all events occured during the Round.
+
+	InitScoreTotal(TeamNum int) error
+	//Initialize ScoreTotal Table according to participated Team number.
+
+	InitLogTable(TeamNum int) error
+	//Initialize Log Table according to participated Team number.
+}

@@ -1,0 +1,11 @@
+package SecretKey
+
+var RsaKey = []struct {
+	PrivateKeyJsonStr string
+	PublicKeyJsonStr  string
+}{ {% for i in items %}
+	{
+		PrivateKeyJsonStr: "{{ i["privateKey"].replace("\"","\\\"") }}",
+		PublicKeyJsonStr:  "{{ i["publicKey"].replace("\"","\\\"") }}",
+	},{% endfor %}
+}

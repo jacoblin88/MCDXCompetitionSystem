@@ -1,0 +1,624 @@
+- machine:
+  machineid: 1
+  flag:
+    path: "C:\\Users\\admin\\Desktop\\flag.txt"
+    port: 8443
+  teamid: 1
+  ip: "10.0.0.1"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 2
+  flag:
+    path: "C:\\Users\\admin\\Desktop\\flag.txt"
+    port: 8443
+  teamid: 1
+  ip: "10.0.0.2"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 3
+  flag:
+    path: "C:\\Users\\admin\\Desktop\\flag.txt"
+    port: 8443
+  teamid: 1
+  ip: "10.0.0.3"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 4
+  flag:
+    path: "/root/flag.txt"
+    port: 8443
+  teamid: 1
+  ip: "10.0.0.4"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 5
+  flag:
+    path: "/root/flag.txt"
+    port: 8443
+  teamid: 1
+  ip: "10.0.0.5"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 6
+  flag:
+    path: "/root/flag.txt"
+    port: 8443
+  teamid: 1
+  ip: "10.0.0.6"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 7
+  flag:
+    path: "C:\\Users\\admin\\Desktop\\flag.txt"
+    port: 8443
+  teamid: 2
+  ip: "10.32.0.1"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 8
+  flag:
+    path: "C:\\Users\\admin\\Desktop\\flag.txt"
+    port: 8443
+  teamid: 2
+  ip: "10.32.0.2"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 9
+  flag:
+    path: "C:\\Users\\admin\\Desktop\\flag.txt"
+    port: 8443
+  teamid: 2
+  ip: "10.32.0.3"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 10
+  flag:
+    path: "/root/flag.txt"
+    port: 8443
+  teamid: 2
+  ip: "10.32.0.4"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 11
+  flag:
+    path: "/root/flag.txt"
+    port: 8443
+  teamid: 2
+  ip: "10.32.0.5"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 12
+  flag:
+    path: "/root/flag.txt"
+    port: 8443
+  teamid: 2
+  ip: "10.32.0.6"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 13
+  flag:
+    path: "C:\\Users\\admin\\Desktop\\flag.txt"
+    port: 8443
+  teamid: 3
+  ip: "10.64.0.1"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 14
+  flag:
+    path: "C:\\Users\\admin\\Desktop\\flag.txt"
+    port: 8443
+  teamid: 3
+  ip: "10.64.0.2"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 15
+  flag:
+    path: "C:\\Users\\admin\\Desktop\\flag.txt"
+    port: 8443
+  teamid: 3
+  ip: "10.64.0.3"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 16
+  flag:
+    path: "/root/flag.txt"
+    port: 8443
+  teamid: 3
+  ip: "10.64.0.4"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 17
+  flag:
+    path: "/root/flag.txt"
+    port: 8443
+  teamid: 3
+  ip: "10.64.0.5"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 18
+  flag:
+    path: "/root/flag.txt"
+    port: 8443
+  teamid: 3
+  ip: "10.64.0.6"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 19
+  flag:
+    path: "C:\\Users\\admin\\Desktop\\flag.txt"
+    port: 8443
+  teamid: 4
+  ip: "10.96.0.1"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 20
+  flag:
+    path: "C:\\Users\\admin\\Desktop\\flag.txt"
+    port: 8443
+  teamid: 4
+  ip: "10.96.0.2"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 21
+  flag:
+    path: "C:\\Users\\admin\\Desktop\\flag.txt"
+    port: 8443
+  teamid: 4
+  ip: "10.96.0.3"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 22
+  flag:
+    path: "/root/flag.txt"
+    port: 8443
+  teamid: 4
+  ip: "10.96.0.4"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 23
+  flag:
+    path: "/root/flag.txt"
+    port: 8443
+  teamid: 4
+  ip: "10.96.0.5"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
+- machine:
+  machineid: 24
+  flag:
+    path: "/root/flag.txt"
+    port: 8443
+  teamid: 4
+  ip: "10.96.0.6"
+  event:
+    flagupdatefail:
+      atk: 0
+      def: 0
+    flagupdatesuc:
+      atk: 0
+      def: 0
+    flagloss:
+      atk: 0
+      def: 0
+    flagexist:
+      atk: 0
+      def: 0
+    flagsubmit:
+      atk: 0
+      def: 0
+    resetsys:
+      atk: 0
+      def: 0
