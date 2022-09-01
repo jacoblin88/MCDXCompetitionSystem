@@ -3,7 +3,14 @@
 This is a system for CTF comptetion(attack & defense) to monitor and score.
 
 ## Software Struct
+
+- UML
+
 ![UML](doc/UML.svg)
+
+- flowchart
+
+![UML](doc/mcdx%20system%20110.svg)
 
 ## Usage
 1. Clean the project
